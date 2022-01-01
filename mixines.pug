@@ -1,0 +1,6 @@
+mixin addBox(numberOfBoxes)
+    //- loop to add data box
+    -for(i=0;i<numberOfBoxes;i++)
+        .box 
+            .data #{data[i]}
+            .datatext #{dataText[i].toUpperCase()}

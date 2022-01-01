@@ -1,0 +1,72 @@
+// import color file 
+@import "color";
+// global
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $veryDarkBlue;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 60%;
+            justify-content: space-between;
+            .main-img {
+                text-align: end;
+                height: 100%;
+                // add color filter on the img
+                filter: grayscale(100%) brightness(36%) sepia(100%) hue-rotate(235deg) saturate(711%) contrast(0.8);
+                -webkit-filter: grayscale(100%) brightness(36%) sepia(100%) hue-rotate(235deg) saturate(711%) contrast(0.8);
+                margin-left: auto;
+            }
+            background-color: $veryDesaturatedBlue;
+            .content {
+                padding-block: 50px;
+                padding-inline: 80px;
+                h1 {
+                    color: $SlightlyTransparentWhiteHeader;
+                    font-weight: 700;
+                    font-family: 'Inter', sans-serif;
+                    span {
+                        color: $softViolet;
+                    }
+                    font-size: 40px;
+                }
+                .paragraph {
+                    color: $SlightlyTransparentParagraph;
+                }
+                .analisis {
+                    display: flex;
+                    justify-items: center;
+                    justify-content: space-between;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .data {
+                    color: $SlightlyTransparentWhiteHeader;
+                    font-size: 26px;
+                    font-weight: 300;
+                }
+                .datatext {
+                    font-weight: 300;
+                    font-size: 15px;
+                    color: $SlightlyTransparentParagraph;
+                }
+            }
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+}

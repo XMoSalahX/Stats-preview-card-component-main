@@ -1,0 +1,27 @@
+//- add basic html file 
+//- Start html 
+include basic-html 
+    //- add main mixin to implement some function
+    //- Start body
+    include mixines
+    .container  
+            main 
+                .content 
+                    .text   
+                        h1.title 
+                            |Get 
+                            span insights 
+                            |that help your business grow.
+                        .paragraph Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+                    .analisis
+                        //- var data control
+                        - var data = ["10K+", "314", "12M+"] ;
+                        - var dataText = ["companies", "templates", "queries"];
+                        //- calling addBox Funcion to add some boxes  
+                        +addBox(3)
+                //- .main-img
+                img(src="images/image-header-desktop.jpg", alt="Image staff" class="main-img")
+    // add script file
+    script(src="js/main.js") 
+    //- End Body
+// End html 

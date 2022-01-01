@@ -1,0 +1,101 @@
+* {
+  font-family: 'Lexend Deca', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+body .container main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1b1938;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+
+body .container main .main-img {
+  text-align: end;
+  height: 100%;
+  filter: grayscale(100%) brightness(36%) sepia(100%) hue-rotate(235deg) saturate(711%) contrast(0.8);
+  -webkit-filter: grayscale(100%) brightness(36%) sepia(100%) hue-rotate(235deg) saturate(711%) contrast(0.8);
+  margin-left: auto;
+}
+
+body .container main .content {
+  padding-block: 50px;
+  padding-inline: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container main .content h1 {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+}
+
+body .container main .content h1 span {
+  color: #aa5cdb;
+}
+
+body .container main .content .paragraph {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body .container main .content .analisis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container main .content .data {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 26px;
+  font-weight: 300;
+}
+
+body .container main .content .datatext {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*# sourceMappingURL=main.css.map */
